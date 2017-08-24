@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="loggin">Usuario</string>
+    <string name="msg_usuario">Escriba Nombre de usuario</string>
+    <string name="passw">Contraseña</string>
+    <string name="msg_pass">Ingrese la contraseña</string>
+    <string name="passwconfirm">Verifique contraseña</string>
+    <string name="msg_passconfirm">Reingrese contraseña nuevamente</string>
+    <string name="correo">Dirección E-mail</string>
+    <string name="msg_correo">Ingrese su dirección de correo</string>
+    <string name="Ciudad">Ciudad</string>
+</resources>

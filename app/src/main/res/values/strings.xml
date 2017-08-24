@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Area Calculator</string>
+    <string name="circulo">Círculo</string>
+    <string name="cuadro">Cuadro</string>
+    <string name="triangulo">Triángulo</string>
+    <string name="cubo">Cubo</string>
+    <string name="msgcirculo">Ingrése el radio del círculo</string>
+    <string name="msgcuadro">Ingrése el lado del cuadro</string>
+    <string name="msgbasetriangulo">Ingrese la base del triángulo</string>
+    <string name="msgaltura">Ingrese la altura el triángulo</string>
+    <string name="msgcubo">Ingrese el lado del cubo</string>
+    <string name="datos">Ingrese aquí los valores</string>
+    <string name="instruccion">Seleccione la Figura Geométrica</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Resultados</string>
+    <string name="area">Área:</string>
+    <string name="perimetro">Perímetro:</string>
+    <string name="volumen">Volumen:</string>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.jesusjavier.practica1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruccion"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+
+                android:id="@+id/chCuadro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cuadro"
+                android:onClick="onCheckboxClicked"
+                />
+            <RadioButton
+                android:id="@+id/chCirculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/circulo"
+                android:onClick="onCheckboxClicked"
+                />
+            <RadioButton
+                android:id="@+id/chTriangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/triangulo"
+                android:onClick="onCheckboxClicked"
+                />
+            <RadioButton
+                android:id="@+id/chCubo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cubo"
+                android:onClick="onCheckboxClicked"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:id="@+id/Edvalor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/datos"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/Edvalor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/app_name"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <Button
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="23dp"
+            android:gravity="center"
+            android:onClick="calcular_valor"
+            android:text="@string/calcular" />
+
+        <TextView
+
+            android:id="@+id/teResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26dp" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
