@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.resistorapp.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="300sp"
+                android:layout_height="98sp"
+                android:layout_gravity="top"
+                android:layout_margin="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/resistor"
+                    android:layout_width="300sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/resistencia" />
+
+                <TextView
+                    android:id="@+id/bcolor1"
+                    android:layout_width="13dp"
+                    android:layout_height="62sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="94sp"
+                    android:layout_marginTop="12sp"
+                    android:background="@color/brown" />
+
+                <TextView
+                    android:id="@+id/bcolor2"
+                    android:layout_width="13dp"
+                    android:layout_height="62sp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/black"
+                    android:layout_alignBaseline="@+id/bcolor1"
+                    android:layout_alignBottom="@+id/bcolor1"
+                    android:layout_toRightOf="@+id/bcolor1"
+                    android:layout_toEndOf="@+id/bcolor1"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/bcolor3"
+                    android:layout_width="13dp"
+                    android:layout_height="62sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="145sp"
+                    android:layout_marginTop="12sp"
+                    android:background="@color/silver" />
+
+                <TextView
+                    android:id="@+id/bcolor4"
+                    android:layout_width="13dp"
+                    android:layout_height="62sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="194sp"
+                    android:layout_marginTop="12sp"
+                    android:background="@color/gold" />
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/Banda_uno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_gravity="right"
+            android:entries="@array/lista1"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="1sp"
+            android:id="@+id/banda1"
+           android:layout_width="130dp"
+            android:layout_height="wrap_content">
+            </Spinner>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="@string/Banda_dos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:entries="@array/lista2"
+                    android:layout_marginLeft="100dp"
+
+                    android:id="@+id/banda2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content">
+                    </Spinner>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="@string/multiplicador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:entries="@array/lista3"
+            android:layout_marginLeft="55dp"
+            android:id="@+id/banda3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="@string/tolerancia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+
+                    android:entries="@array/lista4"
+                    android:layout_marginLeft="78dp"
+                    android:id="@+id/banda4"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/resistance"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/resistencia"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tolerance"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/tolerancia"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

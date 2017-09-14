@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private  float valor1,valor2;
     private float area,perimetro,volumen;
     private String cadena1,cadena2;
+    private ImageView display;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         text1=(EditText)findViewById(R.id.Edvalor1);
         text2=(EditText)findViewById(R.id.Edvalor2);
         teResult=(TextView)findViewById(R.id.teResult);
-
+        display=(ImageView)findViewById(R.id.display);
 
     }
 
@@ -42,12 +44,15 @@ public class MainActivity extends AppCompatActivity {
             text1.setEnabled(true);
             text2.setEnabled(false);
             text2.setVisibility(view.INVISIBLE);
+            display.setImageResource(R.drawable.cuadro);
+
         }
         else if(id==R.id.chCirculo){
             text1.setHint(getResources().getString(R.string.msgcirculo));
             text1.setEnabled(true);
             text2.setEnabled(false);
             text2.setVisibility(view.INVISIBLE);
+            display.setImageResource(R.drawable.circulo);
         }
         else if(id==R.id.chTriangulo){
             text1.setHint(getResources().getString(R.string.msgbasetriangulo));
@@ -55,12 +60,14 @@ public class MainActivity extends AppCompatActivity {
             text1.setEnabled(true);
             text2.setEnabled(true);
             text2.setVisibility(view.VISIBLE);
+            display.setImageResource(R.drawable.triangulo);
         }
         else if(id==R.id.chCubo){
             text1.setHint(getResources().getString(R.string.msgcubo));
             text1.setEnabled(true);
             text2.setEnabled(false);
             text2.setVisibility(view.INVISIBLE);
+            display.setImageResource(R.drawable.cubo);
         }
 
 
@@ -96,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
 
            } else if (chCirculo.isChecked()) {
                valor1 = Float.parseFloat(text1.getText().toString());
-
                area = ((float) Math.PI) * (valor1 * valor1);
                perimetro = 2 * ((float) Math.PI) * valor1;
                teResult.setText("Area del circulo : " + area + "\nPerímetro: " + perimetro);
@@ -117,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
            }
 
         }
-
 
 
     }

@@ -1,1 +1,1 @@
-include ':app', ':formulario'
+include ':app', ':formulario', ':calculadora', ':resistorapp', ':layouts'

@@ -1,12 +1,39 @@
 <resources>
     <string name="app_name">Formulario</string>
     <string name="loggin">Usuario</string>
-    <string name="msg_usuario">Escriba Nombre de usuario</string>
+    <string name="msg_usuario">Escriba Nombre de usuario*</string>
     <string name="passw">Contraseña</string>
-    <string name="msg_pass">Ingrese la contraseña</string>
+    <string name="msg_pass">Ingrese la contraseña*</string>
     <string name="passwconfirm">Verifique contraseña</string>
-    <string name="msg_passconfirm">Reingrese contraseña nuevamente</string>
+    <string name="msg_passconfirm">Reingrese la contraseña*</string>
     <string name="correo">Dirección E-mail</string>
-    <string name="msg_correo">Ingrese su dirección de correo</string>
-    <string name="Ciudad">Ciudad</string>
+    <string name="msg_correo">Ingrese su dirección de correo*</string>
+    <string name="Ciudad">Lugar de Nacimiento</string>
+    <string name="btn_text">Aceptar</string>
+    <string name="jugar">Jugar</string>
+    <string name="musica">Escuchar Música</string>
+    <string name="leer">Leer</string>
+    <string name="pasear">Pasear</string>
+    <string name="pescar">Pescar</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="fecha">fecha</string>
+    <string name="msg_fecha">Fecha de Nacimiento*</string>
+    <string name="datos">Datos Ingresados</string>
+
+
+    <string-array name="ciudades">
+        <item>Barranquilla</item>
+        <item>Bogotá</item>
+        <item>Cali</item>
+        <item>Cartagena</item>
+        <item>Manizales</item>
+        <item>Monteria</item>
+        <item>Medellin</item>
+        <item>Sincelejo</item>
+        <item>Santa Marta</item>
+        <item>Riohacha</item>
+
+
+    </string-array>
 </resources>

@@ -9,7 +9,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/calculadora" />
             <option value="$PROJECT_DIR$/formulario" />
+            <option value="$PROJECT_DIR$/layouts" />
+            <option value="$PROJECT_DIR$/resistorapp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
